@@ -1,0 +1,105 @@
+body {
+  font-size: 15px;
+  font-family: Roboto;
+  color: #000000;
+}
+
+#header {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #000000;
+  padding: 0.8em 0;
+  height: 3em;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: bold;
+  text-align: center;
+}
+
+#logo {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1.7em 0;
+}
+
+#nav-bar {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #000000;
+  height: 3.5em;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.nav-bar-links, .nav-bar-tools {
+  list-style: none;
+  text-transform: uppercase;
+  padding: 0.8em 0;
+  margin: 0;
+}
+
+.nav-bar-links {
+  float: left;
+}
+
+.nav-bar-tools {
+  float: right;
+}
+
+.nav-bar-links li, .nav-bar-tools li {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0 1.5em;
+}
+
+.nav-bar-tools li {
+    font-size: 0.8em;
+}
+
+#cart-items {
+  margin-left: 0.3em;
+  font-size: 1.3em;
+  display: inline;
+}
+
+
+
+@media only screen and (min-width:960px){
+    /* styles for browsers larger than 960px; */
+    body {
+      font-size: 20px;
+    }
+}
+
+@media only screen and (max-device-width:480px){
+   /* styles for mobile browsers smaller than 480px; (iPhone) */
+   body {
+     font-size: 10px;
+   }
+}
+
+@media only screen and (device-width:768px){
+   /* default iPad screens */
+   body {
+     font-size: 22px;
+   }
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+  body {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+  body {
+    font-size: 25px;
+  }
+}
